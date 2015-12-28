@@ -13,3 +13,6 @@ IMPLEMENT_DYNCREATE(CMSWinsockControl, CWnd)
 
 // CMSWinsockControl 操作
 
+// CMSWinsockControl.cpp : 由 Microsoft Visual C++ 创建的 ActiveX 控件包装类的定义
+
+

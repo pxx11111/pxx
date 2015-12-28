@@ -51,4 +51,7 @@ public:
 	afx_msg void OnBnClickedButton3();
 	afx_msg void OnBnClickedButton4();
 	afx_msg void OnBnClickedButton5();
+	DECLARE_EVENTSINK_MAP()
+	void ConnectWinsock1();
+	void ErrorWinsock1(short Number, BSTR* Description, long Scode, LPCTSTR Source, LPCTSTR HelpFile, long HelpContext, BOOL* CancelDisplay);
 };

@@ -39,10 +39,10 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CMSWinsockControl.h">
+    <ClInclude Include="CWebBrowser2.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CWebBrowser2.h">
+    <ClInclude Include="CMSWinsockControl.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,10 +56,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CMSWinsockControl.cpp">
+    <ClCompile Include="CWebBrowser2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CWebBrowser2.cpp">
+    <ClCompile Include="CMSWinsockControl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,11 +1,14 @@
-﻿生成启动时间为 2015/10/26 19:31:32。
+﻿生成启动时间为 2015/12/28 11:44:05。
      1>项目“E:\vs2010 source\test\test\test.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在对“Debug\test.unsuccessfulbuild”执行 Touch 任务。
+         正在创建“Debug\test.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         e:\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\test.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt testDlg.cpp
+         e:\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\test.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp testDlg.cpp
          testDlg.cpp
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         test.cpp
        ResourceCompile:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\test.res" test.rc 
        ManifestResourceCompile:
@@ -31,4 +34,4 @@
 
 生成成功。
 
-已用时间 00:00:02.05
+已用时间 00:00:17.90

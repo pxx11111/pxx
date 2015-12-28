@@ -1,0 +1,30 @@
+﻿生成启动时间为 2015/12/28 11:46:02。
+     1>项目“E:\vs2010 source\test\test\test.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\test.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         e:\vs\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _MBCS /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\test.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt testDlg.cpp
+         testDlg.cpp
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         e:\vs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\vs2010 source\test\Release\test.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\vs2010 source\test\Release\test.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\vs2010 source\test\Release\test.lib" /MACHINE:X86 Release\test.res
+         Release\CMSWinsockControl.obj
+         Release\CWebBrowser2.obj
+         Release\stdafx.obj
+         Release\test.obj
+         Release\testDlg.obj
+         正在生成代码
+         已完成代码的生成
+         test.vcxproj -> E:\vs2010 source\test\Release\test.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\vs2010 source\test\Release\test.exe;#1" /manifest Release\test.exe.intermediate.manifest e:\vs\VC\Include\Manifest\dpiaware.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\test.unsuccessfulbuild”。
+         正在对“Release\test.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\vs2010 source\test\test\test.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.69

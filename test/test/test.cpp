@@ -10,6 +10,8 @@
 #include "CMSWinsockControl.h"
 
 #include "CWebBrowser2.h"
+#include "CMSWinsockControl.h"
+#include "CMSWinsockControl.h"
 
 
 

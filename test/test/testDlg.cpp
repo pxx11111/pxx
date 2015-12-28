@@ -7,6 +7,7 @@
 #include "testDlg.h"
 #include "afxdialogex.h"
 
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -52,6 +53,8 @@ CtestDlg::CtestDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CtestDlg::IDD, pParent)
 {   m_editIP = _T("192.168.1.3");
 m_editPORT = _T("4660");
+m_Step=_T("11");
+m_Speed=_T("11");
 	
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -61,6 +64,8 @@ void CtestDlg::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Text(pDX, IDC_EDIT1, m_editIP);
 	DDX_Text(pDX, IDC_EDIT2, m_editPORT);
+	DDX_Text(pDX, IDC_EDIT3, m_Step);
+	DDX_Text(pDX, IDC_EDIT4, m_Speed);
 	DDX_Control(pDX, IDC_WINSOCK1, m_winsock1);
 	DDX_Control(pDX, IDC_EXPLORER1, m_ctrlWeb);
 }
@@ -115,7 +120,7 @@ BOOL CtestDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-	 m_ctrlWeb.Navigate("192.168.1.3",NULL,NULL,NULL,NULL); 
+	 m_ctrlWeb.Navigate("http://192.168.1.4/login.html",NULL,NULL,NULL,NULL); 
 	
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -331,3 +336,22 @@ void CtestDlg::OnBnClickedButton5()
 {
 	// TODO: 在此添加控件通知处理程序代码
 }
+BEGIN_EVENTSINK_MAP(CtestDlg, CDialogEx)
+	ON_EVENT(CtestDlg, IDC_WINSOCK1, 1, CtestDlg::ConnectWinsock1, VTS_NONE)
+	ON_EVENT(CtestDlg, IDC_WINSOCK1, 6, CtestDlg::ErrorWinsock1, VTS_I2 VTS_PBSTR VTS_I4 VTS_BSTR VTS_BSTR VTS_I4 VTS_PBOOL)
+END_EVENTSINK_MAP()
+
+
+void CtestDlg::ConnectWinsock1()
+{
+	// TODO: 在此处添加消息处理程序代码
+	MessageBox("与网络电机控制板连接成功！","远程农作物图像获取系统控制软件");
+}
+
+
+void CtestDlg::ErrorWinsock1(short Number, BSTR* Description, long Scode, LPCTSTR Source, LPCTSTR HelpFile, long HelpContext, BOOL* CancelDisplay)
+{
+	// TODO: 在此处添加消息处理程序代码
+	MessageBox("与网络电机控制板连接失败！","远程农作物图像获取系统控制软件");
+}
+
